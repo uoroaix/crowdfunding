@@ -1,0 +1,11 @@
+- @campaigns.each do |campaign|
+  .well.col-md-4.col-xs-6
+    %h4= campaign.title
+    %p= campaign.details.truncate(50)
+    %p{class: label_class(campaign.state)}
+      = campaign.state.capitalize
+    - if campaign.draft?
+      = button_to "Publish", publish_campaign_path(campaign), class: "btn btn-info", method: :patch
+
+    %p= link_to "View", campaign, class: "btn btn-default"
+

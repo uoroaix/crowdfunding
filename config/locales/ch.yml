@@ -1,0 +1,5 @@
+ch:
+  hello: "歡迎光臨"
+  login: "歡迎回來主人~"
+  logout: "歡迎下次再來～喵"
+  login-error: "主人你的E-Mail或是密碼不對喵～"

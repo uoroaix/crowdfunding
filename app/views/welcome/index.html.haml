@@ -1,0 +1,9 @@
+.row
+  %h1 Welcome Page
+  .pull-right= link_to "New Campaign", new_campaign_path, class: "btn btn-default"
+%hr
+
+
+#campaign-view.modal.fade{"aria-hidden" => "true", "aria-labelledby" => "myModalLabel", role: "dialog", tabindex: "-1"}
+
+#campaigns= render "campaigns_with_pagination"

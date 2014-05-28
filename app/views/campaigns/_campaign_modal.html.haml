@@ -1,0 +1,12 @@
+.modal-dialog
+  .modal-content
+    .modal-header
+      %h4#myModalLabel.modal-title= @campaign.title
+    .modal-body
+      / Modal BODY
+      %p
+        Details: #{@campaign.details}
+        Target: #{@campaign.target}
+    .modal-footer
+      = link_to "View Details", @campaign
+      %button.btn.btn-default{"data-dismiss" => "modal", type: "button"} Close
